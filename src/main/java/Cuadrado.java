@@ -10,4 +10,21 @@ public class Cuadrado {
         this.lado = i;
     }
 
-}
+    public double area() {
+        double areadeCuadrado = lado *lado;
+        return areadeCuadrado;
+    }
+
+    public double perimetro() {
+        double perimetrodeCuadrado= lado *4;
+        return perimetrodeCuadrado;
+    }
+
+    public double sumarAreasDeCuadrados(List<Cuadrado> cuadrados) {
+        double sumadea=0;
+        for(Cuadrado cuadradito : cuadrados) {
+            sumadea = sumadea + cuadradito.area();
+        }
+        return sumadea;
+    }
+
