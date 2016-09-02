@@ -1,7 +1,7 @@
 /**
  * Created by alumno on 02/09/16.
  */
-public class Circulo {
+public class Circulo implements Figura {
     public int radio;
 
     public Circulo(int i) {
