@@ -11,20 +11,31 @@ public class Cuadrado {
     }
 
     public double area() {
-        double areadeCuadrado = lado *lado;
+        double areadeCuadrado = lado * lado;
         return areadeCuadrado;
     }
 
     public double perimetro() {
-        double perimetrodeCuadrado= lado *4;
+        double perimetrodeCuadrado = lado * 4;
         return perimetrodeCuadrado;
     }
 
     public double sumarAreasDeCuadrados(List<Cuadrado> cuadrados) {
-        double sumadea=0;
-        for(Cuadrado cuadradito : cuadrados) {
+        double sumadea = 0;
+        for (Cuadrado cuadradito : cuadrados) {
             sumadea = sumadea + cuadradito.area();
         }
         return sumadea;
     }
+
+    public double sumarAreasDeFiguras(List<Figura> figuras) {
+        double sumadeAF=0;
+        for (Figura f : figuras){
+            sumadeAF= sumadeAF + f.area();
+        }
+
+
+        return sumadeAF;
+    }
+}
 
