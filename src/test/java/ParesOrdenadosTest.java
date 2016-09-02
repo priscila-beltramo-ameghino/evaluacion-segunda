@@ -41,10 +41,10 @@ public class ParesOrdenadosTest {
         Par <Cuadrado, Rectangulo> par2= new Par(c,r);
 
         Par parGroso = new Par(par,par2);
-        Par<Par<String, Double>, Par<Cuadrado, Rectangulo>> parGroso= new Par(par, par2);
+        Par<Par <String, Double>, Par<Cuadrado, Rectangulo> > pargroso= new Par(par, par2);
 
         //acceder a la base del rectangulo que esta dentro de la variable parGroso
-        Assert.assertEquals(parGroso.second().second().area(), r.area(), 0);
+        Assert.assertEquals(pargroso.second().second().area(), r.area(), 0);
 
     }
 }
